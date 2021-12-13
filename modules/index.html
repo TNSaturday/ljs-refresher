@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module</title>
+</head>
+<body>
+    <h1 id="main-header"></h1>
+
+    <script type="module" src="main.js"></script>
+    <script type="module">
+        import {sayHi} from "./sayHi.js";
+        import {months} from "./constants.js";
+        import User from "./user.js";
+
+        const taras = new User("Taras", "tnsaturday@gmail.com");
+        console.log(`${taras.name} was born in ${months[7]}`);
+        document.getElementById("main-header").innerHTML = sayHi(taras.name);
+    </script>
+</body>
+</html>

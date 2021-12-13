@@ -1,0 +1,1 @@
+A brief refresher on core JavaScript before mastering React.
